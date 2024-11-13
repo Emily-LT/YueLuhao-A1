@@ -19,5 +19,14 @@ public class AssignmentOne {
         ohp1.printDetails();
         System.out.println("------------------------");
         ohp2.printDetails();
+
+        // 第 5 部分 - 创建并打印预约对象
+        Appointment appointment1 = new Appointment(1, "Alice", gp1, "2023-10-01", "10:00 AM");
+        Appointment appointment2 = new Appointment(2, "Bob", ohp1, "2023-10-02", "02:00 PM");
+
+        System.out.println("\nAppointments:");
+        appointment1.printAppointmentDetails();
+        System.out.println("------------------------");
+        appointment2.printAppointmentDetails();
     }
 }

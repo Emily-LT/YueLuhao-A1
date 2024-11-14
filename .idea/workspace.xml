@@ -36,6 +36,21 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="YueLuhao-A1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="YueLuhao-A1" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -53,6 +68,8 @@
       <option name="presentableId" value="Default" />
       <updated>1731464589024</updated>
       <workItem from="1731464590308" duration="4867000" />
+      <workItem from="1731508926031" duration="8000" />
+      <workItem from="1731551182377" duration="20000" />
     </task>
     <servers />
   </component>

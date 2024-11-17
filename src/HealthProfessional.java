@@ -10,19 +10,11 @@ public class HealthProfessional {
         this.name="";
         this.specialty="";
     }
-
-    // 第二个构造函数，用于初始化所有实例变量
-    public HealthProfessional(int ID, String name, String specialization) {
-        this.ID = ID;
-        this.name = name;
-        this.specialization = specialization;
-    }
-
-    // 打印所有实例变量的方法
-    public void printDetails() {
-        System.out.println("ID: " + ID);
-        System.out.println("Name: " + name);
-        System.out.println("Specialization: " + specialization);
+    //这个是初始化A second constructor that initialises all the instance variables.
+    public HealthProfessional(int ID,String name,String specialty){
+        this.ID=ID;
+        this.name=name;
+        this.specialty=specialty;
     }
 
     // Getter 和 Setter 方法

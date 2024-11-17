@@ -2,10 +2,13 @@ public class HealthProfessional {
     // 实例变量
     private int ID;
     private String name;
-    private String specialization;
+    private String specialty;
 
     // 默认构造函数
     public HealthProfessional() {
+        this.ID=0;
+        this.name="";
+        this.specialty="";
     }
 
     // 第二个构造函数，用于初始化所有实例变量

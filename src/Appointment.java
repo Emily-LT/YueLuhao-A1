@@ -1,10 +1,12 @@
+import java.util.Objects;
+
 public class Appointment {
     // 实例变量
-    private int appointmentID;
+    private int appointmentId;
     private String patientName;
-    private HealthProfessional healthProfessional;
-    private String date;
-    private String time;
+    private String patientMobile;
+    private String timeSlot;
+    private HealthProfessional selectedDoctor;
 
     // 默认构造函数
     public Appointment() {

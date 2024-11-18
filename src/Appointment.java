@@ -67,5 +67,19 @@ public class Appointment {
     public void setSelectedDoctor(HealthProfessional selectedDoctor) {
         this.selectedDoctor = selectedDoctor;
     }
+    // 打印打印打印啊啊啊啊
+    public void printDetails() {
+        System.out.println("Appointment Details:");
+        System.out.println("Appointment ID: " + appointmentId);
+        System.out.println("Patient Name: " + patientName);
+        System.out.println("Patient Mobile: " + patientMobile);
+        System.out.println("Time Slot: " + timeSlot);
+        System.out.println("Selected Doctor:");
+        if (selectedDoctor != null) {
+            selectedDoctor.printDetails();
+        } else {
+            System.out.println("No doctor selected.");
+        }
+    }
 
 }

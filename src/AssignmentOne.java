@@ -59,4 +59,16 @@ public class AssignmentOne {
         appointments.add(appointment);
         System.out.println("Appointment created successfully.");
     }
+    // 打印现有预约的方法
+    public static void printExistingAppointments(List<Appointment> appointments) {
+        if (appointments.isEmpty()) {
+            System.out.println("No existing appointments.");
+            return;
+        }
+        System.out.println("Existing Appointments:");
+        for (Appointment appointment : appointments) {
+            appointment.printDetails();
+            System.out.println("--------------------");
+        }
+    }
 }

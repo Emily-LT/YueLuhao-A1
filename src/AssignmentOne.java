@@ -71,4 +71,19 @@ public class AssignmentOne {
             System.out.println("--------------------");
         }
     }
+    // 取消预约的方法
+    public static void cancelBooking(String patientMobile, List<Appointment> appointments) {
+        boolean found = false;
+        for (Appointment appointment : appointments) {
+            if (appointment.getPatientMobile().equals(patientMobile)) {
+                appointments.remove(appointment);
+                System.out.println("Appointment canceled successfully.");
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            System.out.println("No appointment found for the given mobile number.");
+        }
+    }
 }

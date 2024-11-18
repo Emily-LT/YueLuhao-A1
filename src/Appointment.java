@@ -89,6 +89,11 @@ public class Appointment {
         Appointment that = (Appointment) o;
         return appointmentId == that.appointmentId;
     }
+    // 重写 hashCode 方法，以便在集合中使用
+    @Override
+    public int hashCode() {
+        return Objects.hash(appointmentId);
+    }
 
 
 }

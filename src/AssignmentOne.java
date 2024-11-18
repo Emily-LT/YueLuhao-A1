@@ -13,17 +13,20 @@ public class AssignmentOne {
         Dentist dentist1 = new Dentist(4, "张苏雅", "Dentistry", "123456");
         Dentist dentist2 = new Dentist(5, "张竞方", "Dentistry", "654321");
 
-        System.out.println("General Practitioners:");
+        // 打印所有健康专业人员的详细信息
+        System.out.println("Health Professionals Details:");
         gp1.printDetails();
-        System.out.println("------------------------");
+        System.out.println("--------------------");
         gp2.printDetails();
-        System.out.println("------------------------");
+        System.out.println("--------------------");
         gp3.printDetails();
+        System.out.println("--------------------");
+        dentist1.printDetails();
+        System.out.println("--------------------");
+        dentist2.printDetails();
+        System.out.println("--------------------");
 
-        System.out.println("\nOther Health Professionals:");
-        ohp1.printDetails();
-        System.out.println("------------------------");
-        ohp2.printDetails();
+        System.out.println("------------------------------");
 
         // 第 5 部分 - 创建并打印预约对象
         Appointment appointment1 = new Appointment(1, "Alice", gp1, "2023-10-01", "10:00 AM");

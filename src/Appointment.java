@@ -26,23 +26,14 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
-    // 打印预约详细信息的方法
-    public void printAppointmentDetails() {
-        System.out.println("Appointment ID: " + appointmentID);
-        System.out.println("Patient Name: " + patientName);
-        System.out.println("Health Professional:");
-        healthProfessional.printDetails();
-        System.out.println("Date: " + date);
-        System.out.println("Time: " + time);
+
+    // 创建Getter 和 Setter 方法
+    public int getAppointmentId() {
+        return appointmentId;
     }
 
-    // Getter 和 Setter 方法
-    public int getAppointmentID() {
-        return appointmentID;
-    }
-
-    public void setAppointmentID(int appointmentID) {
-        this.appointmentID = appointmentID;
+    public void setAppointmentId(int appointmentId) {
+        this.appointmentId = appointmentId;
     }
 
     public String getPatientName() {
@@ -53,27 +44,28 @@ public class Appointment {
         this.patientName = patientName;
     }
 
-    public HealthProfessional getHealthProfessional() {
-        return healthProfessional;
+    public String getPatientMobile() {
+        return patientMobile;
     }
 
-    public void setHealthProfessional(HealthProfessional healthProfessional) {
-        this.healthProfessional = healthProfessional;
+    public void setPatientMobile(String patientMobile) {
+        this.patientMobile = patientMobile;
     }
 
-    public String getDate() {
-        return date;
+    public String getTimeSlot() {
+        return timeSlot;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setTimeSlot(String timeSlot) {
+        this.timeSlot = timeSlot;
     }
 
-    public String getTime() {
-        return time;
+    public HealthProfessional getSelectedDoctor() {
+        return selectedDoctor;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setSelectedDoctor(HealthProfessional selectedDoctor) {
+        this.selectedDoctor = selectedDoctor;
     }
+
 }

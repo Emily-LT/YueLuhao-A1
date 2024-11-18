@@ -1,6 +1,6 @@
-public class OtherHealthProfessional extends HealthProfessional {
-    // 实例变量
-    private String certification;
+public class Dentist extends HealthProfessional {
+    // 牙医的实例变量(另一种健康专业人员)
+    private String dentalLicenseNumber;
 
     // 默认构造函数
     public OtherHealthProfessional() {

@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class AssignmentOne {
     public static void main(String[] args) {
         // 第 3 部分 - 使用类和对象

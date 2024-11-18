@@ -19,26 +19,38 @@ public class HealthProfessional {
 
     // Getter 和 Setter 方法
     public int getID() {
+
         return ID;
+
     }
 
     public void setID(int ID) {
+
         this.ID = ID;
+
     }
 
     public String getName() {
+
         return name;
+
     }
 
     public void setName(String name) {
+
         this.name = name;
+
     }
 
-    public String getSpecialization() {
-        return specialization;
+    public String getSpecialty() {
+
+        return specialty;
+
     }
 
-    public void setSpecialization(String specialization) {
-        this.specialization = specialization;
+    public void setSpecialty(String specialty) {
+
+        this.specialty = specialty;
+
     }
 }

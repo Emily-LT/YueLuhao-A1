@@ -28,13 +28,14 @@ public class AssignmentOne {
 
         System.out.println("------------------------------");
 
-        // 第 5 部分 - 创建并打印预约对象
-        Appointment appointment1 = new Appointment(1, "Alice", gp1, "2023-10-01", "10:00 AM");
-        Appointment appointment2 = new Appointment(2, "Bob", ohp1, "2023-10-02", "02:00 PM");
+        // Part 5 – Collection of appointments
+        // 声明一个存储 Appointment 对象的 ArrayList
+        List<Appointment> appointments = new ArrayList<>();
 
-        System.out.println("\nAppointments:");
-        appointment1.printAppointmentDetails();
-        System.out.println("------------------------");
-        appointment2.printAppointmentDetails();
+        // 创建预约
+        createAppointment(1, "Zhongli", "1234567890", "10:00 AM - 11:00 AM", gp1, appointments);
+        createAppointment(2, "Hutao", "0987654321", "11:00 AM - 12:00 PM", dentist1, appointments);
+        createAppointment(3, "Xiao", "1112223333", "01:00 PM - 02:00 PM", gp2, appointments);
+        createAppointment(4, "Keqing", "4445556666", "02:00 PM - 03:00 PM", dentist2, appointments);
     }
 }

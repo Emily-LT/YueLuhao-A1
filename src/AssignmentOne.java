@@ -3,13 +3,15 @@ import java.util.List;
 
 public class AssignmentOne {
     public static void main(String[] args) {
-        // 第 3 部分 - 使用类和对象
-        GeneralPractitioner gp1 = new GeneralPractitioner(1, "Dr. John Doe", "General Practitioner", 10);
-        GeneralPractitioner gp2 = new GeneralPractitioner(2, "Dr. Jane Smith", "General Practitioner", 15);
-        GeneralPractitioner gp3 = new GeneralPractitioner(3, "Dr. Alice Brown", "General Practitioner", 8);
+        // Part 3 – Using classes and objects
+        // 创建三个全科医生对象
+        GeneralPractitioner gp1 = new GeneralPractitioner(1, "岳鲁皓", "General Practice", "City Clinic");
+        GeneralPractitioner gp2 = new GeneralPractitioner(2, "孙丽娇", "General Practice", "Rural Clinic");
+        GeneralPractitioner gp3 = new GeneralPractitioner(3, "彭一灵", "General Practice", "Community Clinic");
 
-        OtherHealthProfessional ohp1 = new OtherHealthProfessional(4, "Dr. Bob Johnson", "Dentist", "DDS");
-        OtherHealthProfessional ohp2 = new OtherHealthProfessional(5, "Dr. Carol White", "Nutritionist", "RD");
+        // 创建两个牙医对象
+        Dentist dentist1 = new Dentist(4, "张苏雅", "Dentistry", "123456");
+        Dentist dentist2 = new Dentist(5, "张竞方", "Dentistry", "654321");
 
         System.out.println("General Practitioners:");
         gp1.printDetails();

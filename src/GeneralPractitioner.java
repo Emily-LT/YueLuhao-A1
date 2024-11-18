@@ -14,12 +14,12 @@ public class GeneralPractitioner extends HealthProfessional {
         this.clinic = clinic;
     }
 
-    // Getter 和 Setter 方法
-    public int getExperienceYears() {
-        return experienceYears;
+    // 这是Getter 和 Setter 方法
+    public String getClinic() {
+        return clinic;
     }
 
-    public void setExperienceYears(int experienceYears) {
-        this.experienceYears = experienceYears;
+    public void setClinic(String clinic) {
+        this.clinic = clinic;
     }
 }

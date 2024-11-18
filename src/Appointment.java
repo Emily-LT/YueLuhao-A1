@@ -8,17 +8,22 @@ public class Appointment {
     private String timeSlot;
     private HealthProfessional selectedDoctor;
 
-    // 默认构造函数
+    // 默认构造方法
     public Appointment() {
+        this.appointmentId = 0;
+        this.patientName = "";
+        this.patientMobile = "";
+        this.timeSlot = "";
+        this.selectedDoctor = null;
     }
 
-    // 第二个构造函数，用于初始化所有实例变量
-    public Appointment(int appointmentID, String patientName, HealthProfessional healthProfessional, String date, String time) {
-        this.appointmentID = appointmentID;
+    // 第二个构造方法
+    public Appointment(int appointmentId, String patientName, String patientMobile, String timeSlot, HealthProfessional selectedDoctor) {
+        this.appointmentId = appointmentId;
         this.patientName = patientName;
-        this.healthProfessional = healthProfessional;
-        this.date = date;
-        this.time = time;
+        this.patientMobile = patientMobile;
+        this.timeSlot = timeSlot;
+        this.selectedDoctor = selectedDoctor;
     }
 
     // 打印预约详细信息的方法

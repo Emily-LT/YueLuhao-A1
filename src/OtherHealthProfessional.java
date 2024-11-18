@@ -16,11 +16,12 @@ public class Dentist extends HealthProfessional {
 
 
     // Getter 和 Setter 方法
-    public String getCertification() {
-        return certification;
+    public String getDentalLicenseNumber() {
+        return dentalLicenseNumber;
     }
 
-    public void setCertification(String certification) {
-        this.certification = certification;
+    public void setDentalLicenseNumber(String dentalLicenseNumber) {
+        this.dentalLicenseNumber = dentalLicenseNumber;
     }
+
 }

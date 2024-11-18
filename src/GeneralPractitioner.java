@@ -22,4 +22,9 @@ public class GeneralPractitioner extends HealthProfessional {
     public void setClinic(String clinic) {
         this.clinic = clinic;
     }
+    // 现在打印全科医生的详细信息
+    @Override
+    public void printDetails() {
+        super.printDetails(); // 调用父类的 printDetails 方法
+        System.out.println("Clinic: " + clinic);
 }

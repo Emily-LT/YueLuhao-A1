@@ -23,5 +23,11 @@ public class Dentist extends HealthProfessional {
     public void setDentalLicenseNumber(String dentalLicenseNumber) {
         this.dentalLicenseNumber = dentalLicenseNumber;
     }
+    // 打印
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Dental License Number: " + dentalLicenseNumber);
+    }
 
 }

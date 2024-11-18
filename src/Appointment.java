@@ -81,5 +81,14 @@ public class Appointment {
             System.out.println("No doctor selected.");
         }
     }
+    // 重写 equals 方法，以便根据预约ID判断两个预约是否相同
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Appointment that = (Appointment) o;
+        return appointmentId == that.appointmentId;
+    }
+
 
 }

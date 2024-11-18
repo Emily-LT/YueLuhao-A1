@@ -37,5 +37,16 @@ public class AssignmentOne {
         createAppointment(2, "Hutao", "0987654321", "11:00 AM - 12:00 PM", dentist1, appointments);
         createAppointment(3, "Xiao", "1112223333", "01:00 PM - 02:00 PM", gp2, appointments);
         createAppointment(4, "Keqing", "4445556666", "02:00 PM - 03:00 PM", dentist2, appointments);
+
+        // 打印现有预约
+        printExistingAppointments(appointments);
+
+        // 取消预约
+        cancelBooking("1234567890", appointments);
+
+        // 再次打印现有预约
+        printExistingAppointments(appointments);
+
+        System.out.println("------------------------------");
     }
 }

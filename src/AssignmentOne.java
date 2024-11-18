@@ -49,4 +49,14 @@ public class AssignmentOne {
 
         System.out.println("------------------------------");
     }
+    // 创建预约的方法
+    public static void createAppointment(int appointmentId, String patientName, String patientMobile, String timeSlot, HealthProfessional selectedDoctor, List<Appointment> appointments) {
+        if (patientName == null || patientName.isEmpty() || patientMobile == null || patientMobile.isEmpty() || timeSlot == null || timeSlot.isEmpty() || selectedDoctor == null) {
+            System.out.println("Invalid input. Appointment cannot be created.");
+            return;
+        }
+        Appointment appointment = new Appointment(appointmentId, patientName, patientMobile, timeSlot, selectedDoctor);
+        appointments.add(appointment);
+        System.out.println("Appointment created successfully.");
+    }
 }

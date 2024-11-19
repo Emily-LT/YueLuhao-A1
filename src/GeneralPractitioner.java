@@ -9,8 +9,8 @@ public class GeneralPractitioner extends HealthProfessional {
     }
 
     // 第二个构造函数，用于初始化所有实例变量
-    public GeneralPractitioner(int ID, String name, String specialty, String clinic) {
-        super(ID, name, specialty); // 调用父类的带参数构造方法
+    public GeneralPractitioner(int ID, String name, String specialty, String expertise, String floor, double registrationFee, String clinic) {
+        super(ID, name, specialty, expertise, floor, registrationFee); // 调用父类的带参数构造方法
         this.clinic = clinic;
     }
 
@@ -22,6 +22,7 @@ public class GeneralPractitioner extends HealthProfessional {
     public void setClinic(String clinic) {
         this.clinic = clinic;
     }
+
     // 现在打印全科医生的详细信息
     @Override
     public void printDetails() {

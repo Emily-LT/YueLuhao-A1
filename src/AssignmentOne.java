@@ -5,9 +5,9 @@ public class AssignmentOne {
     public static void main(String[] args) {
         // Part 3 – Using classes and objects
         // 创建三个全科医生对象
-        GeneralPractitioner gp1 = new GeneralPractitioner(1, "岳鲁皓", "General Practice", "City Clinic");
-        GeneralPractitioner gp2 = new GeneralPractitioner(2, "孙丽娇", "General Practice", "Rural Clinic");
-        GeneralPractitioner gp3 = new GeneralPractitioner(3, "彭一灵", "General Practice", "Community Clinic");
+        GeneralPractitioner gp1 = new GeneralPractitioner(1, "岳鲁皓", "General Practice", "Liuzhou People's Hospital");
+        GeneralPractitioner gp2 = new GeneralPractitioner(2, "孙丽娇", "General Practice", "Liuzhou People's Hospital");
+        GeneralPractitioner gp3 = new GeneralPractitioner(3, "彭一灵", "General Practice", "Liuzhou People's Hospital");
 
         // 创建两个牙医对象
         Dentist dentist1 = new Dentist(4, "张苏雅", "Dentistry", "123456");

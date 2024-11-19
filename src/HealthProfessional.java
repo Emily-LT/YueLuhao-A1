@@ -56,7 +56,7 @@ public class HealthProfessional {
     // 这个是打印所有实例变量的方法
     public void printDetails() {
         System.out.println("Health Professional Details:");
-        System.out.println("ID: " + id);
+        System.out.println("ID: " + ID);
         System.out.println("Name: " + name);
         System.out.println("Specialty: " + specialty);
     }

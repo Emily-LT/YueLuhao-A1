@@ -9,11 +9,10 @@ public class Dentist extends HealthProfessional {
     }
 
     // 初始化
-    public Dentist(int ID, String name, String specialty, String dentalLicenseNumber) {
-        super(ID, name, specialty);
+    public Dentist(int ID, String name, String specialty, String expertise, String floor, double registrationFee, String dentalLicenseNumber) {
+        super(ID, name, specialty, expertise, floor, registrationFee);
         this.dentalLicenseNumber = dentalLicenseNumber;
     }
-
 
     // Getter 和 Setter 方法
     public String getDentalLicenseNumber() {
@@ -23,11 +22,11 @@ public class Dentist extends HealthProfessional {
     public void setDentalLicenseNumber(String dentalLicenseNumber) {
         this.dentalLicenseNumber = dentalLicenseNumber;
     }
+
     // 打印
     @Override
     public void printDetails() {
         super.printDetails();
         System.out.println("Dental License Number: " + dentalLicenseNumber);
     }
-
 }

@@ -30,7 +30,7 @@ public class AssignmentOne {
         );
 
         // 打印所有健康专业人员的详细信息
-        System.out.println("Health Professionals Details:");
+        System.out.println("所有健康专业人员的详细信息Health Professionals Details:");
         gp1.printDetails();
         System.out.println("--------------------");
         gp2.printDetails();
@@ -55,12 +55,14 @@ public class AssignmentOne {
         createAppointment(4, "Keqing", "4445556666", "02:00 PM - 03:00 PM", dentist2, appointments);
 
         // 打印现有预约
+        System.out.println("当前的预约列表：");
         printExistingAppointments(appointments);
 
         // 取消预约
         cancelBooking("1234567890", appointments);
 
         // 再次打印现有预约
+        System.out.println("取消预约后的现有预约列表：");
         printExistingAppointments(appointments);
 
         System.out.println("------------------------------");

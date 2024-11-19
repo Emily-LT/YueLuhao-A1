@@ -5,13 +5,29 @@ public class AssignmentOne {
     public static void main(String[] args) {
         // Part 3 – Using classes and objects
         // 创建三个全科医生对象
-        GeneralPractitioner gp1 = new GeneralPractitioner(1, "岳鲁皓", "General Practice", "General Medicine", "1st Floor", 10.0, "Liuzhou People's Hospital");
-        GeneralPractitioner gp2 = new GeneralPractitioner(2, "孙丽娇", "General Practice", "General Medicine", "1st Floor", 10.0, "Liuzhou People's Hospital");
-        GeneralPractitioner gp3 = new GeneralPractitioner(3, "彭一灵", "General Practice", "General Medicine", "1st Floor", 10.0, "Liuzhou People's Hospital");
+        GeneralPractitioner gp1 = new GeneralPractitioner(
+                1, "岳鲁皓", "General Practice",
+                "擅长治疗常见病和多发病，如感冒、发烧、消化不良等。对慢性病的管理和预防也有丰富经验。",
+                "1st Floor", 10.0, "Liuzhou People's Hospital"
+        );
+        GeneralPractitioner gp2 = new GeneralPractitioner(
+                2, "孙丽娇", "General Practice",
+                "专注于儿科疾病，特别是儿童呼吸道感染和过敏反应的治疗。",
+                "1st Floor", 10.0, "Liuzhou People's Hospital"
+        );
+        GeneralPractitioner gp3 = new GeneralPractitioner(
+                3, "彭一灵", "General Practice",
+                "擅长心血管疾病的初步诊断和管理，对高血压和高血脂有深入研究。",
+                "1st Floor", 10.0, "Liuzhou People's Hospital"
+        );
 
         // 创建两个牙医对象
-        Dentist dentist1 = new Dentist(4, "张苏雅", "Dentistry", "Dental Care", "2nd Floor", 15.0, "123456");
-        Dentist dentist2 = new Dentist(5, "张竞方", "Dentistry", "Dental Care", "2nd Floor", 15.0, "654321");
+        Dentist dentist1 = new Dentist(
+                4, "张苏雅", "Dentistry", "Dental Care", "2nd Floor", 15.0, "123456"
+        );
+        Dentist dentist2 = new Dentist(
+                5, "张竞方", "Dentistry", "Dental Care", "2nd Floor", 15.0, "654321"
+        );
 
         // 打印所有健康专业人员的详细信息
         System.out.println("Health Professionals Details:");

@@ -6,27 +6,27 @@ public class AssignmentOne {
         // Part 3 – Using classes and objects
         // 创建三个全科医生对象
         GeneralPractitioner gp1 = new GeneralPractitioner(
-                1, "岳鲁皓", "General Practice",
-                "擅长治疗常见病和多发病，如感冒、发烧、消化不良等。对慢性病的管理和预防也有丰富经验。",
+                1, "Yue Luhao", "General Practice",
+                "Specializes in treating common and frequent illnesses such as colds, fevers, and indigestion. Has extensive experience in managing and preventing chronic diseases.",
                 "1st Floor", 10.0, "Liuzhou People's Hospital"
         );
         GeneralPractitioner gp2 = new GeneralPractitioner(
-                2, "孙丽娇", "General Practice",
-                "专注于儿科疾病，特别是儿童呼吸道感染和过敏反应的治疗。",
+                2, "Sun Lijiao", "General Practice",
+                "Focuses on pediatric diseases, especially respiratory infections and allergic reactions in children.",
                 "1st Floor", 10.0, "Liuzhou People's Hospital"
         );
         GeneralPractitioner gp3 = new GeneralPractitioner(
-                3, "彭一灵", "General Practice",
-                "擅长心血管疾病的初步诊断和管理，对高血压和高血脂有深入研究。",
+                3, "Peng Yiling", "General Practice",
+                "Specializes in the initial diagnosis and management of cardiovascular diseases, with in-depth research on hypertension and hyperlipidemia.",
                 "1st Floor", 10.0, "Liuzhou People's Hospital"
         );
 
         // 创建两个牙医对象
         Dentist dentist1 = new Dentist(
-                4, "张苏雅", "Dentistry", "Dental Care", "2nd Floor", 15.0, "123456"
+                4, "Zhang Suya", "Dentistry", "Dental Care", "2nd Floor", 15.0, "123456"
         );
         Dentist dentist2 = new Dentist(
-                5, "张竞方", "Dentistry", "Dental Care", "2nd Floor", 15.0, "654321"
+                5, "Zhang Jingfang", "Dentistry", "Dental Care", "2nd Floor", 15.0, "654321"
         );
 
         // 打印所有健康专业人员的详细信息
@@ -55,14 +55,14 @@ public class AssignmentOne {
         createAppointment(4, "Keqing", "3211239999", "02:00 PM - 03:00 PM", dentist2, appointments);
 
         // 打印现有预约
-        System.out.println("当前的预约列表：");
+        System.out.println("Current list of appointments:");
         printExistingAppointments(appointments);
 
         // 取消预约
         cancelBooking("1899998888", appointments);
 
         // 再次打印现有预约
-        System.out.println("取消预约后的现有预约列表：");
+        System.out.println("List of appointments after cancellation:");
         printExistingAppointments(appointments);
 
         System.out.println("------------------------------");

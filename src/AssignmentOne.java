@@ -75,7 +75,7 @@ public class AssignmentOne {
             return;
         }
         // 验证电话号码格式
-        if (!patientMobile.matches("\\d{11}")) {
+        if (!patientMobile.matches("\\d{10}")) {
             System.out.println("Invalid phone number format. Appointment cannot be created.");
             return;
         }

@@ -30,7 +30,7 @@ public class AssignmentOne {
         );
 
         // 打印所有健康专业人员的详细信息
-        System.out.println("所有健康专业人员的详细信息Health Professionals Details:");
+        System.out.println("Health Professionals Details:");
         gp1.printDetails();
         System.out.println("--------------------");
         gp2.printDetails();

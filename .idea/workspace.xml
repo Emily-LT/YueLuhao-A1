@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="436fcf92-c08b-401f-a494-8da5893aaabd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AssignmentOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AssignmentOne.java" afterDir="false" />
-    </list>
+    <list default="true" id="436fcf92-c08b-401f-a494-8da5893aaabd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +85,7 @@
       <workItem from="1731829894024" duration="38535000" />
       <workItem from="1732035443348" duration="13000" />
       <workItem from="1732035475976" duration="1127000" />
-      <workItem from="1732082865563" duration="4322000" />
+      <workItem from="1732082865563" duration="4647000" />
     </task>
     <servers />
   </component>

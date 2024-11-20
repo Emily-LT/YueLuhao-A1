@@ -1,20 +1,20 @@
 public class GeneralPractitioner extends HealthProfessional {
-    // 这是实例变量（全科医生）
+    // Instance variable (for general practitioner)
     private String clinic;
 
-    // 默认构造方法
+    // Default constructor
     public GeneralPractitioner() {
-        super(); // 调用父类的默认构造方法
+        super(); // Call the default constructor of the superclass
         this.clinic = "";
     }
 
-    // 第二个构造函数，用于初始化所有实例变量
+    // Second constructor for initializing all instance variables
     public GeneralPractitioner(int ID, String name, String specialty, String expertise, String floor, double registrationFee, String clinic) {
-        super(ID, name, specialty, expertise, floor, registrationFee); // 调用父类的带参数构造方法
+        super(ID, name, specialty, expertise, floor, registrationFee); // Call the parameterized constructor of the superclass
         this.clinic = clinic;
     }
 
-    // 这是Getter 和 Setter 方法
+    // Getter and Setter methods
     public String getClinic() {
         return clinic;
     }
@@ -23,10 +23,10 @@ public class GeneralPractitioner extends HealthProfessional {
         this.clinic = clinic;
     }
 
-    // 现在打印全科医生的详细信息
+    // Now print the detailed information of the general practitioner
     @Override
     public void printDetails() {
-        super.printDetails(); // 调用父类的 printDetails 方法
+        super.printDetails(); // Call the printDetails method of the superclass
         System.out.println("Clinic: " + clinic);
     }
 }

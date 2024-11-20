@@ -1,13 +1,13 @@
 public class HealthProfessional {
-    // 实例变量
+    // Instance variables
     private int ID;
     private String name;
     private String specialty;
-    private String expertise; // 擅长治愈的疾病（添加）
-    private String floor; // 楼层（添加）
-    private double registrationFee; // 挂号费用（添加）
+    private String expertise; // Specialization in treating certain diseases (added)
+    private String floor; // Floor (added)
+    private double registrationFee; // Registration fee (added)
 
-    // 默认构造函数
+    // Default constructor
     public HealthProfessional() {
         this.ID = 0;
         this.name = "";
@@ -17,7 +17,7 @@ public class HealthProfessional {
         this.registrationFee = 0.0;
     }
 
-    // 这是初始化
+    // This is the initialization
     public HealthProfessional(int ID, String name, String specialty, String expertise, String floor, double registrationFee) {
         this.ID = ID;
         this.name = name;
@@ -27,7 +27,7 @@ public class HealthProfessional {
         this.registrationFee = registrationFee;
     }
 
-    // Getter 和 Setter 方法
+    // Getter and Setter methods
     public int getID() {
         return ID;
     }
@@ -76,7 +76,7 @@ public class HealthProfessional {
         this.registrationFee = registrationFee;
     }
 
-    // 打印所有实例变量的方法
+    // Method to print all instance variables
     public void printDetails() {
         System.out.println("Health Professional Details:");
         System.out.println("ID: " + ID);

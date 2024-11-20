@@ -1,14 +1,14 @@
 import java.util.Objects;
 
 public class Appointment {
-    // 实例变量
+    // Instance variables
     private int appointmentId;
     private String patientName;
     private String patientMobile;
     private String timeSlot;
     private HealthProfessional selectedDoctor;
 
-    // 默认构造方法
+    // Default constructor
     public Appointment() {
         this.appointmentId = 0;
         this.patientName = "";
@@ -17,7 +17,7 @@ public class Appointment {
         this.selectedDoctor = null;
     }
 
-    // 第二个构造方法
+    // Second constructor
     public Appointment(int appointmentId, String patientName, String patientMobile, String timeSlot, HealthProfessional selectedDoctor) {
         this.appointmentId = appointmentId;
         this.patientName = patientName;
@@ -26,8 +26,7 @@ public class Appointment {
         this.selectedDoctor = selectedDoctor;
     }
 
-
-    // 创建Getter 和 Setter 方法
+    // Create Getter and Setter methods
     public int getAppointmentId() {
         return appointmentId;
     }
@@ -67,7 +66,8 @@ public class Appointment {
     public void setSelectedDoctor(HealthProfessional selectedDoctor) {
         this.selectedDoctor = selectedDoctor;
     }
-    // 打印打印打印啊啊啊啊
+
+    // Print details
     public void printDetails() {
         System.out.println("Appointment Details:");
         System.out.println("Appointment ID: " + appointmentId);
@@ -81,7 +81,8 @@ public class Appointment {
             System.out.println("No doctor selected.");
         }
     }
-    // 重写 equals 方法，以便根据预约ID判断两个预约是否相同
+
+    // Override equals method to determine if two appointments are the same based on appointment ID
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -89,11 +90,10 @@ public class Appointment {
         Appointment that = (Appointment) o;
         return appointmentId == that.appointmentId;
     }
-    // 重写 hashCode 方法，以便在集合中使用
+
+    // Override hashCode method for use in collections
     @Override
     public int hashCode() {
         return Objects.hash(appointmentId);
     }
-
-
 }

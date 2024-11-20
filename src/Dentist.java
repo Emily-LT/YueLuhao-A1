@@ -1,20 +1,20 @@
 public class Dentist extends HealthProfessional {
-    // 牙医的实例变量(另一种健康专业人员)
+    // Instance variable for dentist (another type of health professional)
     private String dentalLicenseNumber;
 
-    // 这个是默认构造方法
+    // Default constructor
     public Dentist() {
-        super(); // 调用父类的默认构造方法
+        super(); // Call the default constructor of the superclass
         this.dentalLicenseNumber = "";
     }
 
-    // 初始化
+    // Initialization
     public Dentist(int ID, String name, String specialty, String expertise, String floor, double registrationFee, String dentalLicenseNumber) {
         super(ID, name, specialty, expertise, floor, registrationFee);
         this.dentalLicenseNumber = dentalLicenseNumber;
     }
 
-    // Getter 和 Setter 方法
+    // Getter and Setter methods
     public String getDentalLicenseNumber() {
         return dentalLicenseNumber;
     }
@@ -23,7 +23,7 @@ public class Dentist extends HealthProfessional {
         this.dentalLicenseNumber = dentalLicenseNumber;
     }
 
-    // 打印
+    // Print details
     @Override
     public void printDetails() {
         super.printDetails();

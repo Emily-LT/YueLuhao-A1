@@ -81,7 +81,7 @@ public class AssignmentOne {
         }
         Appointment appointment = new Appointment(appointmentId, patientName, patientMobile, timeSlot, selectedDoctor);
         appointments.add(appointment);
-        System.out.println("Appointment created successfully.");
+        System.out.println("Appointment created successfully. Appointment ID: " + appointmentId);
     }
 
     // 打印现有预约的方法
@@ -92,6 +92,7 @@ public class AssignmentOne {
         }
         System.out.println("Existing Appointments:");
         for (Appointment appointment : appointments) {
+            System.out.println("Appointment ID: " + appointment.getAppointmentId());
             appointment.printDetails();
             System.out.println("--------------------");
         }
@@ -103,13 +104,13 @@ public class AssignmentOne {
         for (Appointment appointment : appointments) {
             if (appointment.getPatientMobile().equals(patientMobile)) {
                 appointments.remove(appointment);
-                System.out.println("Appointment canceled successfully.");
+                System.out.println("Appointment canceled successfully. Patient Mobile: " + patientMobile);
                 found = true;
                 break;
             }
         }
         if (!found) {
-            System.out.println("No appointment found for the given mobile number.");
+            System.out.println("No appointment found for the given mobile number: " + patientMobile);
         }
     }
 }

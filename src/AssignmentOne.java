@@ -29,20 +29,22 @@ public class AssignmentOne {
                 5, "Zhang Jingfang", "Dentistry", "Dental Care", "2nd Floor", 15.0, "654321"
         );
 
+        // 将不同类型的健康专业人员对象添加到同一个列表中
+        List<HealthProfessional> healthProfessionals = new ArrayList<>();
+        healthProfessionals.add(gp1);
+        healthProfessionals.add(gp2);
+        healthProfessionals.add(gp3);
+        healthProfessionals.add(dentist1);
+        healthProfessionals.add(dentist2);
+
         // 打印所有健康专业人员的详细信息
         System.out.println("Health Professionals Details:");
-        gp1.printDetails();
-        System.out.println("--------------------");
-        gp2.printDetails();
-        System.out.println("--------------------");
-        gp3.printDetails();
-        System.out.println("--------------------");
-        dentist1.printDetails();
-        System.out.println("--------------------");
-        dentist2.printDetails();
-        System.out.println("--------------------");
+        for (HealthProfessional hp : healthProfessionals) {
+            hp.printDetails();
+            System.out.println("-----------------------------------------");
+        }
 
-        System.out.println("------------------------------");
+        System.out.println("----------------------------------------------------------");
 
         // Part 5 – Collection of appointments
         // 声明一个存储 Appointment 对象的 ArrayList

@@ -92,7 +92,6 @@ public class AssignmentOne {
         }
         System.out.println("Existing Appointments:");
         for (Appointment appointment : appointments) {
-            System.out.println("Appointment ID: " + appointment.getAppointmentId());
             appointment.printDetails();
             System.out.println("--------------------");
         }

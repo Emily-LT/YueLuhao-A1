@@ -74,6 +74,11 @@ public class AssignmentOne {
             System.out.println("Invalid input. Appointment cannot be created.");
             return;
         }
+        // 验证电话号码格式
+        if (!patientMobile.matches("\\d{11}")) {
+            System.out.println("Invalid phone number format. Appointment cannot be created.");
+            return;
+        }
         Appointment appointment = new Appointment(appointmentId, patientName, patientMobile, timeSlot, selectedDoctor);
         appointments.add(appointment);
         System.out.println("Appointment created successfully.");
